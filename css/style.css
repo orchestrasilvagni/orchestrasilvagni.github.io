@@ -1,0 +1,312 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Antonio", sans-serif;
+}
+
+p {
+  margin: 0;
+  text-align: justify;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  height: 50px;
+  z-index: 2;
+  background-color: #231f20;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  color: #f1f1f1;
+  font-size: 22px;
+  align-items: center;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../images/sfondoSenzaBand.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+.bio-wrapper {
+  margin: 6rem 2rem 0 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bio {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  font-size: 18px;
+}
+
+.bio-img {
+  margin-top: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bio-img img {
+  height: 70vh;
+  width: auto;
+}
+
+.music-master {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.music-master img {
+  width: 100px;
+  height: auto;
+  border-radius: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.4s;
+}
+
+.music-master img:hover {
+  height: auto;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.music-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: space-around;
+  background-color: #231f20;
+}
+
+.track-container {
+  margin: 3rem 0;
+  color: #f1f1f1;
+}
+
+.track-title {
+  margin-bottom: 0.5rem;
+  font-family: "Anton", sans-serif;
+}
+
+.track-subtitle {
+  margin-bottom: 0.5rem;
+}
+
+.track audio {
+  height: 35px;
+}
+
+.gallery-container {
+  min-height: 100vh;
+  background-color: #231f20;
+}
+
+.gallery-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-wrapper {
+  margin: 4rem;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  background-size: cover;
+}
+
+.img-wrapper:hover {
+  width: 230px;
+  height: 230px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.img-1 {
+  background-image: url("../images/Giorgio.jpeg");
+}
+.img-2 {
+  background-image: url("../images/Claudio.jpeg");
+}
+.img-3 {
+  background-image: url("../images/Beppe.jpeg");
+}
+.img-4 {
+  background-image: url("../images/Collage.jpeg");
+}
+.img-5 {
+  background-image: url("../images/FabioeGiorgio.jpeg");
+}
+.img-6 {
+  background-image: url("../images/Fumetto.jpeg");
+}
+.img-7 {
+  background-image: url("../images/MilcoeMauro.jpeg");
+}
+.img-8 {
+  background-image: url("../images/Orchestra.jpeg");
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 5vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  height: 70vh;
+  width: auto;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  margin-top: 50px;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.close {
+  font-family: "Courier New", monospace;
+  position: absolute;
+  top: 55px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  background-image: url("../images/sfondoSenzaBand.png");
+  background-size: cover;
+  display: flex;
+}
+
+.footer-logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin: 3rem 0;
+}
+
+.footer-logo img {
+  width: 240px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.footer-contacts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  margin: 3rem 0;
+}
+
+.footer-contacts div {
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 980px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-logo img {
+    width: 180px;
+  }
+
+  .footer-contacts {
+    margin: 1rem 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bio-img {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .bio-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-container {
+    flex-direction: column;
+  }
+
+  .bio-wrapper {
+    margin: 1rem;
+    width: auto;
+  }
+
+  .modal-content {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .bio {
+    font-size: 22px;
+  }
+}
