@@ -14,6 +14,15 @@ p {
   text-align: justify;
 }
 
+h2 {
+  font-weight: 600;
+  font-size: 39px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: start;
+  width: 100%;
+}
+
 .navbar {
   width: 100%;
   position: fixed;
@@ -49,28 +58,29 @@ p {
 }
 
 .bio-wrapper {
-  margin: 6rem 2rem 0 2rem;
-  width: 100%;
+  margin: 5rem 2rem 0 2rem;
+  width: 62%;
   display: flex;
   flex-direction: column;
 }
 
 .bio {
   display: flex;
+  flex-direction: column;
   text-align: justify;
   align-items: center;
   font-size: 16px;
 }
 
 .bio-img {
-  margin-top: 6rem;
-  width: 100%;
+  margin-top: 5rem;
+  width: 38%;
   display: flex;
   justify-content: center;
 }
 
 .bio-img img {
-  height: 70vh;
+  height: 80vh;
   width: auto;
 }
 
@@ -259,6 +269,9 @@ p {
 }
 
 @media screen and (max-width: 980px) {
+  h2 {
+    font-size: 37px;
+  }
   .footer {
     flex-direction: column;
   }
@@ -283,6 +296,7 @@ p {
   .bio-img {
     margin: 0;
     padding: 1rem;
+    width: 100%;
   }
 
   .bio-img img {
@@ -295,7 +309,7 @@ p {
   }
 
   .bio-wrapper {
-    margin: 1rem;
+    margin: 5rem 1rem 1rem 1rem;
     width: auto;
   }
 
@@ -303,10 +317,17 @@ p {
     width: 90%;
     height: auto;
   }
+
+  .footer-contacts div {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1800px) {
+  h2 {
+    font-size: 43px;
+  }
   .bio {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
